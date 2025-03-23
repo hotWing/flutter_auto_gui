@@ -37,7 +37,7 @@ class FlutterAutoGuiWindows extends FlutterAutoGUIPlatform {
     Duration duration = Duration.zero,
     Curve curve = Curves.linear,
   }) async {
-    _moveOrDrag(
+    await _moveOrDrag(
       point: point,
       action: _MouseAction.move,
       duration: duration,
@@ -51,7 +51,7 @@ class FlutterAutoGuiWindows extends FlutterAutoGUIPlatform {
     Duration duration = Duration.zero,
     Curve curve = Curves.linear,
   }) async {
-    _moveOrDrag(
+    await _moveOrDrag(
       offset: offset,
       action: _MouseAction.move,
       duration: duration,
@@ -66,7 +66,7 @@ class FlutterAutoGuiWindows extends FlutterAutoGUIPlatform {
     Duration duration = Duration.zero,
     Curve curve = Curves.linear,
   }) async {
-    _moveOrDrag(
+    await _moveOrDrag(
       point: point,
       button: button,
       action: _MouseAction.drag,
@@ -82,7 +82,7 @@ class FlutterAutoGuiWindows extends FlutterAutoGUIPlatform {
     Duration duration = Duration.zero,
     Curve curve = Curves.linear,
   }) async {
-    _moveOrDrag(
+    await _moveOrDrag(
       offset: offset,
       button: button,
       action: _MouseAction.drag,
